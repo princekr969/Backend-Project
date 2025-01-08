@@ -35,11 +35,10 @@ const userSchema = new Schema({
 
     coverImage: {
         type:String, //? Using cloudinary(like AWS) url of avatar img. 
-        required: true,
     },
 
     watchHistory: [{
-        type: Schema.Type.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: "Video"
     }],
 
